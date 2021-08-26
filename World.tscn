@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://character/player/PlayerOld.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World.gd" type="Script" id=2]
 [ext_resource path="res://WorldVoxelTerrain.gd" type="Script" id=3]
 [ext_resource path="res://world/Sand.tres" type="Material" id=4]
-[ext_resource path="res://character/player/Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://character/pedestrian/Pedestrian.tscn" type="PackedScene" id=5]
+[ext_resource path="res://pathfinding/AStarGenerator.gd" type="Script" id=6]
 
 [sub_resource type="OpenSimplexNoise" id=16]
 
@@ -35,7 +36,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="PlayerOld" parent="." instance=ExtResource( 1 )]
+[node name="Player" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 61.663, 80.2765, 52.2886 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
@@ -62,5 +63,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Player" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 51.8762, 73.962, 38.5724 )
+[node name="Pedestrian" parent="." instance=ExtResource( 5 )]
+transform = Transform( -0.991123, 0, -0.132948, 0, 1, 0, 0.132948, 0, -0.991123, 55.9372, 82.5955, 43.0107 )
+
+[node name="AStarGenerator" type="Node" parent="."]
+script = ExtResource( 6 )

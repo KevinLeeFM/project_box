@@ -34,6 +34,10 @@ func _input(event):
 			self.erase_terrain()
 		elif event.is_action_pressed("minor_action"):
 			self.place_terrain()
+	
+	# TODO: remove later
+	if Input.is_key_pressed(KEY_F):
+		get_tree().get_root().find_node("Pedestrian")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
