@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/M1911.obj-9cd23514c8e7aee6b055db4e02298564.mesh"
+
+[deps]
+
+files=[ "res://.import/M1911.obj-9cd23514c8e7aee6b055db4e02298564.mesh" ]
+
+source_file="res://character/shoot/M1911.obj"
+dest_files=[ "res://.import/M1911.obj-9cd23514c8e7aee6b055db4e02298564.mesh", "res://.import/M1911.obj-9cd23514c8e7aee6b055db4e02298564.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

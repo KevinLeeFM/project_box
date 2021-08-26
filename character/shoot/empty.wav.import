@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/empty.wav-3411461f8fb64f4d62c7da037cfbc0d2.sample"
+
+[deps]
+
+source_file="res://character/shoot/empty.wav"
+dest_files=[ "res://.import/empty.wav-3411461f8fb64f4d62c7da037cfbc0d2.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

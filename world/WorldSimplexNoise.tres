@@ -1,0 +1,17 @@
+[gd_resource type="VoxelGeneratorNoise2D" load_steps=3 format=2]
+
+[sub_resource type="Curve" id=9]
+bake_resolution = 50
+_data = [ Vector2( 0.0960334, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.173278, 0.138636 ), 0.0, 0.0, 0, 0, Vector2( 0.363257, 0.229545 ), 0.0, 0.0, 0, 0, Vector2( 0.436326, 0.375 ), 1.01606, 1.01606, 0, 0, Vector2( 0.636743, 0.520455 ), 0.0, 0.0, 0, 0, Vector2( 0.778706, 0.729545 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="OpenSimplexNoise" id=6]
+seed = 42
+period = 49.3
+persistence = 0.827
+lacunarity = 2.19
+
+[resource]
+height_start = -70.0
+height_range = 40.0
+noise = SubResource( 6 )
+curve = SubResource( 9 )
